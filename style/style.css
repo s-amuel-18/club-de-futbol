@@ -1,0 +1,149 @@
+@font-face {
+    font-family: light;
+    src: url(../fonts/AvenirLTStd-Light.otf);
+}
+@font-face {
+    font-family: Roman;
+    src: url(../fonts/AvenirLTStd-Roman.otf);
+}
+
+:root {
+    --azul-todo:#14154d ; 
+
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body,html {
+    width: 100%;
+    height: 100%;
+}
+body {
+    font-family: light;
+    color: var(--azul-todo);
+}
+
+.header {
+    width: 100%;
+    height: 100vh;
+}
+
+.contentMenu {
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contentMenu__contentLogo,
+.contentMenu__contentNavbar {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.contentMenu__contentLogo a{
+    height: 70%;
+    display: flex;
+    align-items: center;
+}
+.contentMenu__contentLogo img{
+    width: 50px;
+}
+
+.contentMenu__contentNavbar {
+    justify-content: flex-end;
+}
+.contentMenu__contentNavbar-ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+}
+.contentMenu__contentNavbar-ul a{
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.contentImgPrincipal {
+    width: 100%;
+    height: calc(100% - 70px);
+}
+.contentImgPrincipal img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+/* estilos del main */
+.main {
+    width: 100%;
+    height: 100%;
+}
+
+.contentPrimerContenido {
+    width: 100%;
+    height: 65vh;
+    display: flex;
+    margin-top: 40px;
+} 
+
+.contentPrimerContenido__contentSeccion {
+    width: 55%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.contentPrimerContenido__contentSeccion-contentDescription {
+    width: 100%;
+    height: 60%;
+    display: flex;
+}
+.contentPrimerContenido__contentSeccion-contentDescription .azulrectangulo{
+    width: 15%;
+    height: 100%;
+    background-color: var(--azul-todo);
+}
+
+.contentPrimerContenido__contentSeccion-contentDescription--description {
+    width: 85%;
+    height: 100%;
+    padding: 60px 70px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+.contentPrimerContenido__contentSeccion-contentDescription--description h2 {
+    font-size: 2.9em;
+    font-family: Roman;
+}
+.contentPrimerContenido__contentSeccion-contentDescription--description p {
+    width: 70%;
+    font-size: 1.4em;
+    margin-top: 20px;
+}
+
+.contentPrimerContenido__contentImg {
+    width: 45%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contentPrimerContenido__contentImg img{
+    width: 350px;
+    height: 350px;
+    object-fit: cover;
+    box-shadow: 10px 10px 7px rgba(0, 0, 0, .2) ;
+}
